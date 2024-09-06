@@ -1,1 +1,102 @@
-/* Add custom css styles here */
+/* CSS for Flexbox Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative; /* Relative positioning for the header */
+    height: 50vh; /* Full viewport height (adjust as needed) */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    overflow: hidden;
+    text-align: center; /* Center text horizontally */
+}
+
+header img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the area */
+    position: absolute; /* Position image behind text */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move image behind text */
+}
+
+header h1, header p {
+    color: black; /* Ensure text color is visible */
+    margin: 0.5rem 0; /* Add space around text */
+
+}
+
+.text-box{
+  background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+  z-index: -1; /* Ensure it stays behind the text */
+  border-radius: 10px;
+  width: 300px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  padding: 20px;
+}
+
+.cookies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust space between items as needed */
+}
+
+.cookies-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular shape */
+}
+
+.img-box {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin: 20px 0; /* Optional: Add margin to space the image from surrounding content */
+}
+
+/* Make the image inside the img-box smaller */
+.img-box img {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fits well */
+}
+
+
+footer {
+    background-color: rgb(75, 121, 183);
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-text {
+    max-width: 600px;
+    line-height: 1.6;
+}
